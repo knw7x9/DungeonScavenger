@@ -1,0 +1,28 @@
+﻿<Window x:Name="frmMainWindow" x:Class="Deliverable7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Deliverable7"
+        mc:Ignorable="d" Height="717" Width="1329"
+        KeyUp="Window_KeyUp"
+        x:FieldModifier="public" Title="Dungeon Scavenger">
+    <Grid>
+        <Button x:Name="btnSaveGame" Content="Save Game" HorizontalAlignment="Left" Margin="515,22,0,0" VerticalAlignment="Top" Width="120" Height="25" Click="btnSaveGame_Click"/>
+        <Button x:Name="btnLoadGame" Content="Load a Saved Game" HorizontalAlignment="Left" Margin="640,22,0,0" VerticalAlignment="Top" Width="120" Height="25" Click="btnLoadGame_Click"/>
+        <Grid x:Name="grdMap" HorizontalAlignment="Left" Height="600" Margin="35,60,0,0" VerticalAlignment="Top" Width="900"/>
+        <Button x:Name="btnLeft" Content="Left" HorizontalAlignment="Left" Margin="1036,91,0,0" VerticalAlignment="Top" Width="60" Height="25" FontSize="16" Click="btnLeft_Click" RenderTransformOrigin="0.417,1.4"/>
+        <Button x:Name="btnUp" Content="Up" HorizontalAlignment="Left" Margin="1096,49,0,0" VerticalAlignment="Top" Width="60" FontSize="16" Height="25" RenderTransformOrigin="0.1,0.52" Click="btnUp_Click"/>
+        <Button x:Name="btnDown" Content="Down" HorizontalAlignment="Left" Margin="1096,133,0,0" VerticalAlignment="Top" Width="60" FontSize="16" Height="25" Click="btnDown_Click"/>
+        <Button x:Name="btnRight" Content="Right" HorizontalAlignment="Left" Margin="1156,91,0,0" VerticalAlignment="Top" Width="60" FontSize="16" Height="25" Click="btnRight_Click"/>
+        <TextBlock x:Name="tbName" HorizontalAlignment="Left" Margin="976,188,0,0" TextWrapping="Wrap" Text="Name:" VerticalAlignment="Top" FontSize="20" Width="94" TextAlignment="Center"/>
+        <TextBlock x:Name="tbOutputName" HorizontalAlignment="Left" Margin="1083,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Width="209" Height="55" TextAlignment="Center"/>
+        <TextBlock x:Name="tbHitPoints" HorizontalAlignment="Left" Margin="976,516,0,0" TextWrapping="Wrap" Text="Hit Points:" VerticalAlignment="Top" FontSize="20" Width="94" TextAlignment="Center"/>
+        <TextBlock x:Name="tbOutputHitPoints" HorizontalAlignment="Left" Margin="1083,516,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Width="209" Height="27" TextAlignment="Center"/>
+        <TextBlock x:Name="tbWeapon" HorizontalAlignment="Left" Margin="971,558,0,0" TextWrapping="Wrap" Text="Weapon:" VerticalAlignment="Top" FontSize="20" Width="99" TextAlignment="Center"/>
+        <TextBlock x:Name="tbOutputWeapon" HorizontalAlignment="Left" Margin="1083,558,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Width="209" Height="27" Text="None" TextAlignment="Center"/>
+        <TextBlock x:Name="tbKey" HorizontalAlignment="Left" Margin="976,602,0,0" TextWrapping="Wrap" Text="Key:" VerticalAlignment="Top" FontSize="20" Width="94" TextAlignment="Center"/>
+        <TextBlock x:Name="tbOutputKey" HorizontalAlignment="Left" Margin="1083,602,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Width="209" Height="27" Text="None"  TextAlignment="Center"/>
+        <Image x:Name="imgHero" HorizontalAlignment="Left" Height="180" Margin="1069,286,0,0" VerticalAlignment="Top" Width="147" Source="Images/Hero.png"/>
+    </Grid>
+</Window>

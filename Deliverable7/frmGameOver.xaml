@@ -1,0 +1,18 @@
+﻿<Window x:Name="frmGameIsOver" x:Class="Deliverable7.frmGameOver"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Deliverable7"
+        mc:Ignorable="d" Height="387" Width="349" ShowInTaskbar="False">
+    <Grid>
+        <Image x:Name="imgGameOver" HorizontalAlignment="Left" Height="162" Margin="94,20,0,0" VerticalAlignment="Top" Width="148"/>
+        <TextBlock x:Name="tbOutputGameState" HorizontalAlignment="Left" Margin="41,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Width="255" TextAlignment="Center"/>
+        <TextBlock x:Name="tbOutputInformation" HorizontalAlignment="Left" Margin="41,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Width="255" TextAlignment="Center"/>
+        <TextBlock x:Name="tbWishToDo" HorizontalAlignment="Left" Margin="41,251,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Width="255" Text="What do you want do?" TextAlignment="Center"/>
+        <Button x:Name="btnRestart" Content="Restart" HorizontalAlignment="Left" Margin="41,300,0,0" VerticalAlignment="Top" Width="120" FontSize="16" Height="25" Click="btnRestart_Click"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="176,300,0,0" VerticalAlignment="Top" Width="120" FontSize="16" Height="25" Click="btnExit_Click"/>
+        <Button x:Name="btnOk" Content="Ok" HorizontalAlignment="Left" Margin="108,300,0,0" VerticalAlignment="Top" Width="120" FontSize="16" Height="25" Click="btnOk_Click"/>
+
+    </Grid>
+</Window>
